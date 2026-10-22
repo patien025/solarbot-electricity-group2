@@ -1,0 +1,611 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="solarbot_droid">
+    <link name="base_link">
+      <pose>0.0000 0.0000 0.0500 0.0000 0.0000 0.0000</pose>
+      <inertial>
+        <mass>0.45</mass>
+        <inertia>
+          <ixx>0.00057</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00097</iyy>
+          <iyz>0</iyz>
+          <izz>0.00123</izz>
+        </inertia>
+      </inertial>
+      <collision name="plate_col">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.1400 0.1000 0.0080</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="plate">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.1400 0.1000 0.0080</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8000 0.6300 0.4000 1</ambient>
+          <diffuse>0.8000 0.6300 0.4000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="left_gear_motor">
+        <pose>0.0000 0.0400 -0.0150 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0650 0.0220 0.0180</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.9500 0.8000 0.1000 1</ambient>
+          <diffuse>0.9500 0.8000 0.1000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="right_gear_motor">
+        <pose>0.0000 -0.0400 -0.0150 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0650 0.0220 0.0180</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.9500 0.8000 0.1000 1</ambient>
+          <diffuse>0.9500 0.8000 0.1000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="battery_pack">
+        <pose>-0.0360 0.0000 0.0150 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0650 0.0350 0.0220</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.0800 0.0800 0.0900 1</ambient>
+          <diffuse>0.0800 0.0800 0.0900 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="battery_label">
+        <pose>-0.0360 0.0000 0.0265 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0400 0.0200 0.0010</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8500 0.1500 0.1000 1</ambient>
+          <diffuse>0.8500 0.1500 0.1000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="arduino_nano">
+        <pose>0.0000 -0.0280 0.0075 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0450 0.0180 0.0030</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.2500 0.6500 1</ambient>
+          <diffuse>0.1000 0.2500 0.6500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="nano_chip">
+        <pose>0.0000 -0.0280 0.0105 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0100 0.0100 0.0030</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.0500 0.0500 0.0500 1</ambient>
+          <diffuse>0.0500 0.0500 0.0500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="nano_usb">
+        <pose>-0.0225 -0.0280 0.0105 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0080 0.0090 0.0040</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7500 0.7500 0.7800 1</ambient>
+          <diffuse>0.7500 0.7500 0.7800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="l298n_board">
+        <pose>0.0200 0.0220 0.0060 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0430 0.0430 0.0020</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8000 0.1000 0.1000 1</ambient>
+          <diffuse>0.8000 0.1000 0.1000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="l298n_heatsink">
+        <pose>0.0200 0.0220 0.0170 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0200 0.0300 0.0200</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.0500 0.0500 0.0500 1</ambient>
+          <diffuse>0.0500 0.0500 0.0500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="l298n_terminal-1">
+        <pose>0.0040 0.0220 0.0120 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0080 0.0120 0.0100</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3000 0.8500 1</ambient>
+          <diffuse>0.1000 0.3000 0.8500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="l298n_terminal1">
+        <pose>0.0360 0.0220 0.0120 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0080 0.0120 0.0100</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3000 0.8500 1</ambient>
+          <diffuse>0.1000 0.3000 0.8500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="brush_arm1">
+        <pose>0.0775 0.0520 -0.0125 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0250 0.0040 0.0350</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.4500 0.4500 0.4800 1</ambient>
+          <diffuse>0.4500 0.4500 0.4800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="brush_arm-1">
+        <pose>0.0775 -0.0520 -0.0125 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0250 0.0040 0.0350</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.4500 0.4500 0.4800 1</ambient>
+          <diffuse>0.4500 0.4500 0.4800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="brush_motor">
+        <pose>0.0850 0.0660 -0.0240 -1.5708 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0110</radius>
+            <length>0.0240</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.6200 0.6200 0.6500 1</ambient>
+          <diffuse>0.6200 0.6200 0.6500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="caster_mount">
+        <pose>-0.0600 0.0000 -0.0055 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0300 0.0300 0.0030</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.4500 0.4500 0.4800 1</ambient>
+          <diffuse>0.4500 0.4500 0.4800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="left_wheel">
+      <pose>0.0000 0.0625 0.0350 -1.5708 0.0000 0.0000</pose>
+      <inertial>
+        <mass>0.05</mass>
+        <inertia>
+          <ixx>1.7e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.7e-05</iyy>
+          <iyz>0</iyz>
+          <izz>3.06e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="tyre_col">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0350</radius>
+            <length>0.0200</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.5</mu>
+              <mu2>1.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="tyre">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0350</radius>
+            <length>0.0200</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.0500 0.0500 0.0500 1</ambient>
+          <diffuse>0.0500 0.0500 0.0500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="hub">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0240</radius>
+            <length>0.0215</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.9500 0.8000 0.1000 1</ambient>
+          <diffuse>0.9500 0.8000 0.1000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="right_wheel">
+      <pose>0.0000 -0.0625 0.0350 -1.5708 0.0000 0.0000</pose>
+      <inertial>
+        <mass>0.05</mass>
+        <inertia>
+          <ixx>1.7e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.7e-05</iyy>
+          <iyz>0</iyz>
+          <izz>3.06e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="tyre_col">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0350</radius>
+            <length>0.0200</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.5</mu>
+              <mu2>1.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="tyre">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0350</radius>
+            <length>0.0200</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.0500 0.0500 0.0500 1</ambient>
+          <diffuse>0.0500 0.0500 0.0500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="hub">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0240</radius>
+            <length>0.0215</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.9500 0.8000 0.1000 1</ambient>
+          <diffuse>0.9500 0.8000 0.1000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="caster">
+      <pose>-0.0600 0.0000 0.0175 0.0000 0.0000 0.0000</pose>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.2e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.2e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1.2e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name="ball_col">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.0175</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.0</mu>
+              <mu2>0.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="ball">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.0175</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.6000 0.6000 0.6200 1</ambient>
+          <diffuse>0.6000 0.6000 0.6200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="fork">
+        <pose>0.0000 0.0000 0.0150 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0060</radius>
+            <length>0.0300</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.4500 0.4500 0.4800 1</ambient>
+          <diffuse>0.4500 0.4500 0.4800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="brush">
+      <pose>0.0850 0.0000 0.0260 -1.5708 0.0000 0.0000</pose>
+      <inertial>
+        <mass>0.03</mass>
+        <inertia>
+          <ixx>2.97e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.97e-05</iyy>
+          <iyz>0</iyz>
+          <izz>9.4e-06</izz>
+        </inertia>
+      </inertial>
+      <visual name="core">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0120</radius>
+            <length>0.1000</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.0800 0.2500 0.8000 1</ambient>
+          <diffuse>0.0800 0.2500 0.8000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="shaft">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0040</radius>
+            <length>0.1120</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="bristle0">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0500 0.0040 0.0960</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3500 0.9500 1</ambient>
+          <diffuse>0.1000 0.3500 0.9500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="bristle1">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.5236</pose>
+        <geometry>
+          <box>
+            <size>0.0500 0.0040 0.0960</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3500 0.9500 1</ambient>
+          <diffuse>0.1000 0.3500 0.9500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="bristle2">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 1.0472</pose>
+        <geometry>
+          <box>
+            <size>0.0500 0.0040 0.0960</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3500 0.9500 1</ambient>
+          <diffuse>0.1000 0.3500 0.9500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="bristle3">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.0500 0.0040 0.0960</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3500 0.9500 1</ambient>
+          <diffuse>0.1000 0.3500 0.9500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="bristle4">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 2.0944</pose>
+        <geometry>
+          <box>
+            <size>0.0500 0.0040 0.0960</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3500 0.9500 1</ambient>
+          <diffuse>0.1000 0.3500 0.9500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="bristle5">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 2.6180</pose>
+        <geometry>
+          <box>
+            <size>0.0500 0.0040 0.0960</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.1000 0.3500 0.9500 1</ambient>
+          <diffuse>0.1000 0.3500 0.9500 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <joint name="left_wheel_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>left_wheel</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.0005</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="right_wheel_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>right_wheel</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.0005</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="brush_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>brush</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.0005</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name="caster_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>caster</child>
+    </joint>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.125</wheel_separation>
+      <wheel_radius>0.035</wheel_radius>
+      <odom_publish_frequency>30</odom_publish_frequency>
+      <topic>/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <max_linear_velocity>0.4</max_linear_velocity>
+      <max_angular_velocity>3.0</max_angular_velocity>
+    </plugin>
+    <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
+      <joint_name>brush_joint</joint_name>
+      <topic>/brush_cmd</topic>
+    </plugin>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher"/>
+    <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
+      <publish_link_pose>false</publish_link_pose>
+      <publish_model_pose>true</publish_model_pose>
+      <publish_nested_model_pose>false</publish_nested_model_pose>
+      <use_pose_vector_msg>true</use_pose_vector_msg>
+      <update_frequency>20</update_frequency>
+    </plugin>
+  </model>
+</sdf>

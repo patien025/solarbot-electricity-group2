@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>solarbot_sim</name>
+  <version>0.1.0</version>
+  <description>SolarBot (Electricity Group 2): low-cost rooftop solar-panel cleaning droid in Gazebo Harmonic + ROS 2 Jazzy</description>
+  <maintainer email="group2@example.com">Electricity Group 2</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>tf2_msgs</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>joy</exec_depend>
+  <exec_depend>teleop_twist_joy</exec_depend>
+  <exec_depend>teleop_twist_keyboard</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

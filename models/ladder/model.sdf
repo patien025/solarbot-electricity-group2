@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="ladder">
+    <static>true</static>
+    <link name="ladder">
+      <visual name="rail_l">
+        <pose>-0.2200 0.0000 1.4000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0400 0.0400 2.8000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rail_r">
+        <pose>0.2200 0.0000 1.4000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0400 0.0400 2.8000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="col">
+        <pose>0.0000 0.0000 1.4000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.5000 0.0600 2.8000</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="rung0">
+        <pose>0.0000 0.0000 0.3000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung1">
+        <pose>0.0000 0.0000 0.6000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung2">
+        <pose>0.0000 0.0000 0.9000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung3">
+        <pose>0.0000 0.0000 1.2000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung4">
+        <pose>0.0000 0.0000 1.5000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung5">
+        <pose>0.0000 0.0000 1.8000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung6">
+        <pose>0.0000 0.0000 2.1000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung7">
+        <pose>0.0000 0.0000 2.4000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="rung8">
+        <pose>0.0000 0.0000 2.7000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.4400 0.0300 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7000 0.7000 0.7200 1</ambient>
+          <diffuse>0.7000 0.7000 0.7200 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

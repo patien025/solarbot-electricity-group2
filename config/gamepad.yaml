@@ -1,0 +1,19 @@
+# Xbox-style gamepad. Hold LB (button 4) to drive, RB (5) = turbo.
+# Left stick: up/down = forward/back, left/right = turn.  A (0) = brush on/off.  B (1) = stop.
+teleop_twist_joy_node:
+  ros__parameters:
+    require_enable_button: true
+    enable_button: 4
+    enable_turbo_button: 5
+    axis_linear:
+      x: 1
+    scale_linear:
+      x: 0.12
+    scale_linear_turbo:
+      x: 0.30
+    axis_angular:
+      yaw: 0
+    scale_angular:
+      yaw: 1.2
+    scale_angular_turbo:
+      yaw: 2.0

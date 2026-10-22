@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="solar_panel">
+    <static>true</static>
+    <link name="panel_link">
+      <collision name="surface">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>1.0000 0.6700 0.0300</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.5</mu>
+              <mu2>1.5</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="frame">
+        <pose>0.0000 0.0000 0.0000 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>1.0000 0.6700 0.0300</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7500 0.7700 0.8000 1</ambient>
+          <diffuse>0.7500 0.7700 0.8000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="cells">
+        <pose>0.0000 0.0000 0.0155 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.9600 0.6300 0.0040</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.0600 0.1200 0.3800 1</ambient>
+          <diffuse>0.0600 0.1200 0.3800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_v0">
+        <pose>-0.3200 0.0000 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0040 0.6300 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_v1">
+        <pose>-0.1600 0.0000 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0040 0.6300 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_v2">
+        <pose>0.0000 0.0000 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0040 0.6300 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_v3">
+        <pose>0.1600 0.0000 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0040 0.6300 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_v4">
+        <pose>0.3200 0.0000 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.0040 0.6300 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_h0">
+        <pose>0.0000 -0.2520 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.9600 0.0040 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_h1">
+        <pose>0.0000 -0.1260 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.9600 0.0040 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_h2">
+        <pose>0.0000 0.0000 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.9600 0.0040 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_h3">
+        <pose>0.0000 0.1260 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.9600 0.0040 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="busbar_h4">
+        <pose>0.0000 0.2520 0.0178 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.9600 0.0040 0.0006</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.8000 0.8800 1</ambient>
+          <diffuse>0.7800 0.8000 0.8800 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="dust">
+        <pose>0.0000 0.0000 0.0188 0.0000 0.0000 0.0000</pose>
+        <geometry>
+          <box>
+            <size>0.9600 0.6300 0.0012</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7800 0.6800 0.5000 1</ambient>
+          <diffuse>0.7800 0.6800 0.5000 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+        <transparency>0.5500</transparency>
+      </visual>
+    </link>
+  </model>
+</sdf>
