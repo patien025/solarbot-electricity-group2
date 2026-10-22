@@ -29,11 +29,7 @@ gable roofs) and **thatched rondavels**, each carrying solar panels, plus the dr
 | AI/ML Engineer | Bernard J Kadenhe | N01531833Y | Dust/crack dataset, camera-based inspection model (later phase) |
 | Chief Security Officer | *unassigned – group to decide* | | Command authentication, key handling, privacy (SRS SEC-1 to SEC-4) |
 
-> **Check before pushing:** the role-to-name mapping above was read from the pasted table. Confirm it and fill in the
-> two unassigned roles. Also confirm spellings and IDs (Bernard's ID appears as `N02531833Y` in the SRS and
-> `N01531833Y` in the table; Tyrese's surname appears as *Mapamgisana* and *Mapangisana*).
-> Add each member's GitHub username in `docs/TEAM_ROLES.md`.
-
+>
 ## Repository layout
 
 ```
