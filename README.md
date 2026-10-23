@@ -15,19 +15,22 @@ gable roofs) and **thatched rondavels**, each carrying solar panels, plus the dr
 ```
 
 ## Team and roles (Electricity Group 2)
+# Electricity Group 2 – roles and GitHub accounts
 
-| Role | Member | Student ID | What they own in this repo |
-|---|---|---|---|
-| Project Manager | Tyrese Jonathan Mapangisana | N02534462L | Plan, milestones, GitHub Projects board, pull-request approval, weekly supervisor update, keeps README/docs current |
-| Software Engineer | Hope Munashe Chibare | N02532738H | ROS 2 package architecture (`launch/`, `config/bridge.yaml`, `CMakeLists.txt`), coding standards, code review |
-| Systems Engineer | Tawananyasha Tarugarira | N02532657D | Droid and world design (`models/`, `tools/generate_models.py`), parts list and wiring (`docs/physical_droid.md`), integration of sim and hardware |
-| Network Engineer | Precious R Magaya | N02529749P | Simulated LoRa/WiFi reporting link (next package), message format, POTRAZ radio rules (TBD-1) |
-| Programmer 1 | *unassigned – group to decide* | | |
-| Programmer 2 | Tinevimbo Chikaka | N02534499J | Gamepad/brush nodes (`scripts/brush_control.py`), cleaning monitor (`scripts/cleaning_monitor.py`) |
-| Test Programmer | Patience Mafira | N02529263K | Test plan, `tools/check_repo.py`, launch/scenario tests, bug reports as GitHub Issues |
-| Database Administrator | Ashton Ndlovu | N02532750L | SQLite schema for reports/logs, panel inventory (`config/panels.yaml` → database), data retention |
-| AI/ML Engineer | Bernard J Kadenhe | N01531833Y | Dust/crack dataset, camera-based inspection model (later phase) |
-| Chief Security Officer | *unassigned – group to decide* | | Command authentication, key handling, privacy (SRS SEC-1 to SEC-4) |
+| Role | Member | Student number | GitHub username | Main folders / duties |
+|---|---|---|---|---|
+| Project Manager | Tyrese Mapamgisana | N02534462L | @Tyrese | Issues board, milestones, PR approvals, supervisor reports, README/docs |
+| Software Engineer | Hope M Chibare | N02532738H | @Hope178 | launch/, config/bridge.yaml, package structure, code review |
+| Systems Engineer | Tawananyasha Tarugarira | N02532657D | @TawanaTarue | models/, tools/generate_models.py, docs/physical_droid.md, hardware build |
+| Network Engineer | Precious R Magaya | N02529749P | @Precious | LoRa/WiFi link simulation, message format, POTRAZ rules |
+| Programmer 1 | Tafadzwa Chinhoyi | N02529632Q | @tafadzwa012 | Navigation/docking helpers for the later autonomy phase |
+| Programmer 2 | Tinevimbo Chikaka | N02534499J | @tine-20 | scripts/brush_control.py, scripts/cleaning_monitor.py |
+| Test Programmer | Patience Mafira | N02529263K | @patien025 | tools/check_repo.py, test/, bug reports |
+| Database Administrator | Ashton Ndlovu | N02532750L | @Ashera-dev | SQLite reports/logs schema, panel inventory |
+| AI/ML Engineer | Bernard J Kadenhe | N02531833Y | @n02531833y-afk | Dust/crack inspection model: training and evaluation |
+| AI/ML Engineer (shared) | Dumisile N Ndlovu | N02418654Y | @TBC | Dust/crack dataset: collecting, labelling, organising images |
+| Chief Security Officer | Zvinaishe Marume | N02530132V | @TBC | Authenticated commands, keys out of source, privacy |
+| Lecturer / Supervisor | Lecturer | N/A | @kchilumani | Project supervision and assessment |
 
 >
 ## Repository layout
