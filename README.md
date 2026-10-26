@@ -29,7 +29,7 @@ gable roofs) and **thatched rondavels**, each carrying solar panels, plus the dr
 | Database Administrator | Ashton Ndlovu | N02532750L | @Ashera-dev | SQLite reports/logs schema, panel inventory |
 | AI/ML Engineer | Bernard J Kadenhe | N02531833Y | @n02531833y-afk | Dust/crack inspection model: training and evaluation |
 | AI/ML Engineer (shared) | Dumisile N Ndlovu | N02418654Y | @TBC | Dust/crack dataset: collecting, labelling, organising images |
-| Chief Security Officer | Zvinaishe Marume | N02530132V | @TBC | Authenticated commands, keys out of source, privacy |
+| Chief Security Officer | Zvinaishe Marume | N02530132V | nicoDee20 | Authenticated commands, keys out of source, privacy |
 | Lecturer / Supervisor | Lecturer | N/A | @kchilumani | Project supervision and assessment |
 
 >
