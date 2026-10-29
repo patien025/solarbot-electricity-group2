@@ -19,7 +19,7 @@ gable roofs) and **thatched rondavels**, each carrying solar panels, plus the dr
 
 | Role | Member | Student number | GitHub username | Main folders / duties |
 |---|---|---|---|---|
-| Project Manager | Tyrese Mapamgisana | N02534462L | @Tyrese | Issues board, milestones, PR approvals, supervisor reports, README/docs |
+| Project Manager | Tyrese Mapangisana | N02534462L | @Tyrese | Issues board, milestones, PR approvals, supervisor reports, README/docs |
 | Software Engineer | Hope M Chibare | N02532738H | @Hope178 | launch/, config/bridge.yaml, package structure, code review |
 | Systems Engineer | Tawananyasha Tarugarira | N02532657D | @TawanaTarue | models/, tools/generate_models.py, docs/physical_droid.md, hardware build |
 | Network Engineer | Precious R Magaya | N02529749P | @Precious | LoRa/WiFi link simulation, message format, POTRAZ rules |
