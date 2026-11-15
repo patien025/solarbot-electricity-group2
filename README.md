@@ -2,7 +2,7 @@
 
 **Electricity Group 2** · Gazebo Harmonic + ROS 2 Jazzy · simulation-first
 
-A student-budget (about USD 15–24) wheeled droid that cleans solar panels on the roofs of rural houses.
+A student-budget wheeled droid that cleans solar panels on the roofs of rural houses.
 A technician places the droid on a panel and drives it with a gamepad; the front brush sweeps the panel.
 This repository holds the simulation: a realistic Zimbabwean village with **modern houses** (corrugated-iron
 gable roofs) and **thatched rondavels**, each carrying solar panels, plus the droid and its controls.
