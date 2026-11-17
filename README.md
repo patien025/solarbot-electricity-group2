@@ -35,7 +35,7 @@ This repository has two parts:
 ## Features
 
 - **Phone control:** drive the droid and switch the brush on and off from a phone, with no extra controller to carry.
-- **Low cost:** two geared motors, caster, front brush, ESP32, motor driver and battery for roughly USD 15 to 24.
+- **Low cost:** two geared motors, caster, front brush, ESP32, motor driver and battery.
 - **Realistic simulation:** a full village with 26 rooftop panels, including thatched rondavels with a timber panel rack.
 - **Cleaning monitor:** reports when a panel is at least 95 % swept.
 - **One generator:** a single script builds every model, the world and the panel table, so they never drift apart.
