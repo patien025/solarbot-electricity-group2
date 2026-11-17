@@ -6,7 +6,7 @@
 | Software Engineer | Hope M Chibare | @Hope178 | `launch/`, `config/bridge.yaml`, package structure, code review |
 | Systems Engineer | Tawananyasha Tarugarira | @TawanaTarue | `models/`, `tools/generate_models.py`, `docs/physical_droid.md`, hardware build |
 | Network Engineer | Precious R Magaya | @Precious | LoRa/WiFi link simulation, message format, POTRAZ rules |
-| Programmer 1 | Tafadzwa Chinhoyi | @tafadzwa012 | Navigation/docking helpers for the later autonomy phase |
+| Programmer 1 | Tafadzwa Chinhoyi | @tafadzwa0123 | Navigation/docking helpers for the later autonomy phase |
 | Programmer 2 | Tinevimbo Chikaka | @tine-20 | `scripts/brush_control.py`, `scripts/cleaning_monitor.py` |
 | Test Programmer | Patience Mafira | @patien025 | `tools/check_repo.py`, `test/`, bug reports |
 | Database Administrator | Ashton Ndlovu | @Ashera-dev | SQLite reports/logs schema, panel inventory |
