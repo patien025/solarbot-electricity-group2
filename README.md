@@ -201,6 +201,7 @@ Run `check_repo.py` before every pull request.
 |---|---|
 | Project proposal | `SolarBot_Remote_Controlled_Proposal.docx` |
 | Full project documentation | `SolarBot_Remote_Controlled_Documentation.docx` |
+| AI/ML inspection model and evaluation | [`docs/AI_ML_INSPECTION.md`](docs/AI_ML_INSPECTION.md) |
 | Hardware build notes | [`docs/physical_droid.md`](docs/physical_droid.md) |
 | Team roles | [`docs/TEAM_ROLES.md`](docs/TEAM_ROLES.md) |
 | Simulation screen recording | `solar bot droid world recording.mp4.bz2` (decompress with `bunzip2`) |

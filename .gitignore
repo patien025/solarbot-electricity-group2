@@ -6,3 +6,5 @@ __pycache__/
 *.bag
 *.db3
 .vscode/
+.pytest_cache/
+ai_inspection/data/
