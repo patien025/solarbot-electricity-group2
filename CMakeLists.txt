@@ -8,6 +8,7 @@ install(PROGRAMS
   scripts/brush_control.py
   scripts/cleaning_monitor.py
   scripts/place_droid.py
+  scripts/inspection_node.py
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
